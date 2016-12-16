@@ -1,0 +1,488 @@
+/*
+Theme Name: ececlub
+Theme URI: http://ece.skule.ca;
+Theme URI: http://www.ececlub.com;
+Description: a theme created for U of T ECE's club website
+Author URI: http://ece.skule.ca;
+Version: 1.0
+Tags: responsive, purple, slideshows
+*/
+
+@font-face {
+	font-family: BebasNeue; /*a name to be used later*/
+	/*src: url('Antonio-Regular.ttf'); /*URL to font*/
+	/*src: url('BPdotsCondensed.ttf'); /*URL to font*/
+	src: url('font/BebasNeue.otf'); /*URL to font*/
+}
+
+html,body {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+}
+
+/*=======================================
+================header===================
+=========================================
+*/
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by its height */
+	margin: 0 auto 0px;
+	/* Pad bottom by footer height */
+	padding-top: 10px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+#wrap>.container {
+	padding: 60px 15px 0;
+}
+
+/*=======================================
+==============main content===============
+=========================================
+*/
+
+
+
+#bannerHome{
+    padding: 0px 0px 20px 0px;
+    position: relative;
+    height: auto;
+    /*min-width: 368px;*/
+    background: #112043; /* Old browsers */
+    background: -moz-linear-gradient(top,  #112043 0%, #36547d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#112043), color-stop(100%,#36547d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #112043 0%,#36547d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #112043 0%,#36547d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #112043 0%,#36547d 100%); /* IE10+ */
+    background: linear-gradient(top, bottom,  #112043 0%,#36547d 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#112043', endColorstr='#36547d',GradientType=0 ); /* IE6-9 */
+
+	background: #27241f;	
+	margin-bottom: -0px;
+}
+
+#cover-link{
+	background: black;
+	padding: auto;
+	margin: auto;
+}
+
+#bannerDescription{
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    max-width: 400px;
+    max-height: 95%;
+    color: #ffffff;
+    text-align: right;
+}
+
+#discussion-sticker{
+    position:absolute;
+    left: 80px;
+    top: -100px;
+    z-index: 10;
+}
+
+#discussion-sticker-mobile{
+    position:absolute;
+    right: 0px;
+    bottom: -50px;
+    z-index: 1000;
+}
+
+.center-block{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1);
+}
+
+/*=======================================
+==============blog posts===============
+=========================================
+*/
+
+.post{
+    background-color: #e3e3e3;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+/* for scaling purposes */
+.post img{
+    width: 100%;
+    height: auto;
+}
+
+#colorstrip{
+    width: 100%; height: 6px;
+    background-color: #b8bfc9;
+}
+
+.post .timestamp{
+    background-color: #dadcde;
+    color: #858f9e;
+    padding: 0px 60px 0px 60px;
+    font-style: italic;
+    text-shadow: 1px 1px #f4f4f5;
+}
+
+.post .post-content{
+    padding: 0px 60px 0px 60px;
+    font-size: 14px;
+}
+
+.post .post-content h3{
+    color: #36547d;
+    font-size: 30px;
+    text-shadow: -2px 0 4px #ecf4ff;
+}
+
+/*=======================================
+=============front page side bar=========
+=========================================
+*/
+
+#billboard{
+    background-color: #36547d;
+    position: relative;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+#billboard:before{
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 55px solid white;
+    border-left: 55px solid #36547d;
+    width: 0;
+}
+
+#wrap>.container {
+    padding: 30px 15px 0;
+}
+
+#billboard h2{
+    padding-top: 20px;
+    padding-bottom: 10px; 
+    color: #ffffff;
+    text-shadow: -2px 0 4px #19273a;
+    font-family: 'BebasNeue';
+}
+
+#billboard table{
+    position: relative;
+    z-index: 1;
+    padding-right: 20px;
+}
+
+#billboard tbody tr:nth-child(odd) td{
+    background-color: #e5ecf9;
+}
+
+#billboard tbody tr:nth-child(even) td{
+    background-color: #ffffff;
+}
+
+#billboard tfoot tr{
+    background-color: #ffffff;
+}
+
+#billboard tbody tr td a{
+    color: #428bca;
+}
+
+#billboard tbody tr td a:visited,
+#billboard tbody tr td a:hover{
+    color: #428bca;
+}
+
+.shadowed {
+/*   -webkit-filter: drop-shadow(7px 7px 5px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+*/
+
+}
+
+root { 
+    display: block;
+}
+
+
+
+/*=======================================
+===========footer========================
+=========================================
+*/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+
+/* Set the fixed height of the footer here */
+#footer {
+	height: 100px;
+	background-color: #eaeaea;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 11px;
+    color: #7d7d7d;
+    margin-top: 40px;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+
+.container .credit {
+	margin: 20px 0;
+
+}
+
+#footer{
+    clear: both;
+}
+
+#footer > .container {
+    padding-left: 15px;
+	padding-right: 15px;
+    clear: both;
+}
+
+#footer a:link, a:visited, a:hover {
+    text-decoration: none;
+    color: #7d7d7d;
+}
+
+
+
+/*=====================================================
+===========addition style for home page================
+=======================================================
+*/
+
+.nav{
+    /*margin-left: 100px;*/
+    height: auto;
+    padding-top: 14px;
+}
+
+#banner-image-container{
+    height: auto;
+    width: 100%;
+    background-color: #000;
+    overflow: hidden;
+}
+
+#banner-image{
+    width: 100%;
+    height: auto;
+}
+
+#main-container{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#content-post{
+    width:65%;
+    height:auto;
+    float: left;
+}
+
+#sidebar{
+    width:33%;
+    height:auto;
+    float: right;
+}
+
+.col-md-8{
+    width: 100%;
+     /*margin: 10px 60px 0 60px;*/
+}
+
+
+.post{
+    width: 100%;
+    border-top:solid 6px #b8bfc9;
+}
+
+.post-content{
+    padding: 0 60px;
+}
+
+.post-content h1{
+    font-family: 'BebasNeue';
+    width: 80%;
+    text-align: justify;
+    color: #36547d;
+    font-size: 25px;
+}
+
+.post-content a img{
+    width: 80%;
+    height: auto;
+}
+
+#subtitle{
+    background-color: #dadcde;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#subtitle p{
+    color: #858f9e;
+    font-style: italic;
+    text-shadow: 1px 1px #f4f4f5;
+}
+
+.page-container h1{
+    text-align:center;
+}
+
+.horizontal-rule{
+    background: -webkit-linear-gradient(top, rgba(18, 32, 67, 1),
+        rgba(43, 66, 110, 1)); /* For Safari */
+    background: -o-linear-gradient(bottom, rgba(18, 32, 67, 1),
+        rgba(43, 66, 110, 1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, rgba(18, 32, 67, 1),
+        rgba(43, 66, 110, 1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, rgba(18, 32, 67, 1),
+        rgba(43, 66, 110, 1)); /* Standard syntax (must be last) */
+    border: 0;
+    height: 4px;
+}
+
+
+/*=====================================================
+==========================calendar table=================
+=======================================================
+*/
+
+.gce-feed .event-wrapper:nth-child(even){
+	background-color: #e5ecf9;
+} 
+
+.gce-feed .event-wrapper:nth-child(odd){
+	background-color: #ffffff;
+}
+
+.event-wrapper{
+	display: table;
+	padding-left: 10px;
+	padding-right:10px;
+	width: 100%
+}
+.event-time{
+	width: 120px;
+	float:left;
+	background-color: #e5ecf9;
+}
+
+.event-title{
+	background-color: #e5ecf9;
+	display: block;
+}
+
+.event-date{
+	width: 100%;
+	background-color: #ffffff;
+}
+
+
+/*=====================================================
+==========================constitution=================
+=======================================================
+*/
+
+#constitution-container{
+    margin: 40px auto;
+    width: 800px;
+    margin-bottom: 80px;
+}
+
+#frame-const iframe{
+    width: 100%;
+    height: 100vh;
+    padding: 0 auto;
+
+}
+
+#frame-const h4{
+    margin:100px 0 30px 0;
+    text-decoration: underline;
+}
+
+.pdf-frame{
+    width: 100%;
+    height: 100vh;
+}
+
+/*=====================================================
+=======================Anti Calendar===================
+=======================================================
+*/
+
+table.rating {
+width: 100%;
+}
+
+/*=====================================================
+==========================@media=======================
+=======================================================
+*/
+
+@media ( max-width : 801px) {
+    #main-container{
+        width: auto;
+    }
+    #site-title {
+        margin-left: 10px;
+        margin-bottom: -55px;
+        z-index: 999;
+        color: white;
+    }
+    .navbar-inverse .navbar-toggle {
+        border-color: #333333;
+        height: 30px;
+        padding-top: 7px;
+        margin-bottom: 0px;
+    }
+}
+
+@media ( max-width : 1000px){
+    #sidebar{
+       float: bottom;
+       width: 84%;
+       margin-right: 8%;
+       margin-bottom: 50px;
+    }
+
+    #content-post{
+        width:88%;
+        float: right;
+        margin-right: 7%;
+    }
+
+}
