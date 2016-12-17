@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-
-
 	<div id="banner-image-container">
         <?php if ( is_active_sidebar( 'home_banner' ) ) : ?>
             <?php dynamic_sidebar( 'home_banner'); ?>
@@ -35,21 +33,14 @@
 			<?php endwhile; ?>
 		</div>
 
-        <?php if ( is_active_sidebar(null)) : ?>
+        <?php if ( is_active_sidebar('home_right_sidebar')) : ?>
     		<div id="sidebar">
                 <aside class="col-4 col-md-4 " id="billboard">
-                    <?php get_sidebar(); ?> 
+                    <?php get_sidebar('home_right_sidebar'); ?> 
                 </aside>
     		</div>
         <?php endif; ?>
-
-
 	</div>
-
-
-
-	
 </div>
-
 
 <?php get_footer(); ?>
