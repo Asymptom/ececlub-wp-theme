@@ -1,8 +1,8 @@
 <footer id="footer">
 		<center class="container">
 			Sandford Fleming Building B640<br>
-			10 King's College Road, Toronto, Ontario M5S 3G4<br>647-862-1353<br> 
-			<a href="mailto:ececlub@ecf.utoronto.ca">ececlub@ecf.utoronto.ca</a>
+			10 King's College Road, Toronto, Ontario M5S 3G4<br>
+			<a href="mailto:<?php echo get_option('admin_email')?>"><?php echo get_option('admin_email')?></a>
 		</center>
 		<div class="text-muted text-left credit col-6 col-md-6">
 			Designed by: <a
