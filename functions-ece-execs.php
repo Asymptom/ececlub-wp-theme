@@ -327,9 +327,9 @@ function ececlub_execs(){
                 </tbody>
             </table>
             <?php if ($offset > 0) { ?>
-                <a href="<?php echo $current_url . "&offset=" . ($offset - 10)?>" class="button button-primary">Previous</a>
+                <a href="<?php echo $current_url . "&offset=" . ($offset - 20)?>" class="button button-primary">Previous</a>
             <?php } ?>
-            <a href="<?php echo $current_url . "&offset=" . ($offset + 10) ?>" class="button button-primary">Next</a>
+            <a href="<?php echo $current_url . "&offset=" . ($offset + 20) ?>" class="button button-primary">Next</a>
         <?php } ?>
     </div>
     <?php 
