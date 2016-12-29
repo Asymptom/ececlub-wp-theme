@@ -153,8 +153,7 @@ img.grayscale {
 }
 
 .pagination-wrap{
-    width: 50%;
-    margin: 0 auto; 
+    padding-left: 15px; 
 }
 
 /*=======================================
@@ -167,6 +166,7 @@ img.grayscale {
     position: relative;
     padding-bottom: 10px;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 #billboard:before{
