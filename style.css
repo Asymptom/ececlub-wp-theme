@@ -152,6 +152,11 @@ img.grayscale {
     text-shadow: -2px 0 4px #ecf4ff;
 }
 
+.pagination-wrap{
+    width: 50%;
+    margin: 0 auto; 
+}
+
 /*=======================================
 =============front page side bar=========
 =========================================

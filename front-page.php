@@ -16,21 +16,25 @@
 	<div id="main-container">
 
 		<div id="content-post">
-			<?php
-            while ( have_posts() ) : the_post(); ?>
-				<section class="col-8 col-md-8">
-					<div class="post">
-                        <div class="post-content">
-                            <h1><?php the_title(); ?></h1>
-                            <?php the_content(); ?>
-                        </div>
+            <?php if ( have_posts() ) : ?>
+    			<?php
+                while ( have_posts() ) : the_post(); ?>
+    				<section class="col-8 col-md-8">
+    					<div class="post">
+                            <div class="post-content">
+                                <h1><?php the_title(); ?></h1>
+                                <?php the_content(); ?>
+                            </div>
 
-                        <div id="subtitle"><p>Submitted by <?php the_author(); ?> on <?php echo get_the_date(); ?> </p></div>
+                            <div id="subtitle"><p>Submitted by <?php the_author(); ?> on <?php echo get_the_date(); ?> </p></div>
 
-					</div>
-				</section>
-
-			<?php endwhile; ?>
+    					</div>
+    				</section>
+    			<?php endwhile; ?>
+                <?php bittersweet_pagination(); ?>
+            <?php else : ?>
+                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+            <?php endif; ?>
 		</div>
 
         <?php if ( is_active_sidebar('home_right_sidebar')) : ?>
