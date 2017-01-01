@@ -112,6 +112,8 @@ function create_upcoming_events_cat () {
 }
 
 include 'functions-ece-execs.php';
+include 'functions-ece-spaces.php';
+
 /**************WIDGETS******************************/
 
 // Register widgetized areas
@@ -251,5 +253,6 @@ function bittersweet_pagination() {
         echo '</ul></div>';
     }
 }
+
 
 ?>
