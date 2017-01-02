@@ -17,8 +17,14 @@
 							<hr class="horizontal-rule">
 							<?php the_content(); ?>
 							<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+								<!-- TODO: Reformat -->
+								<?php
+									global $post;
+									$custom = get_post_custom($post->ID);
+									$location = $custom["location"][0]; 
+							  	?>
 								<h2><?php the_title(); ?></h2>
-								<hr class="horizontal-rule">
+								<strong>Location: </strong><?php echo $location ?>
 								<?php the_content(); ?>
 							<?php endwhile; ?>
 						</div>
