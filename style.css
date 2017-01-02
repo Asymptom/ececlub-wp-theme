@@ -363,6 +363,7 @@ root {
 }
 
 .page-container h1{
+    padding-top: 30px;
     text-align:center;
 }
 

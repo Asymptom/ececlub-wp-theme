@@ -113,6 +113,9 @@ function create_upcoming_events_cat () {
 
 include 'functions-ece-execs.php';
 include 'functions-ece-spaces.php';
+include 'functions-ece-courses.php';
+
+flush_rewrite_rules();
 
 /**************WIDGETS******************************/
 
